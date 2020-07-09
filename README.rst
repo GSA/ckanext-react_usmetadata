@@ -32,56 +32,36 @@
 ckanext-react_usmetadata
 =============
 
-.. Put a description of your extension here:
-   What does it do? What features does it have?
-   Consider including some screenshots or embedding a video!
-
+Embeds the React USMetadata App using custom paths
 
 ------------
 Requirements
 ------------
 
-For example, you might want to mention here which versions of CKAN this
-extension works with.
-
+Tested with GSA Inventory App and CKAN 2.5 and greater
 
 ------------
 Installation
 ------------
 
-.. Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
+The CKAN extension installs like a regular CKAN extension.
 
-To install ckanext-react_usmetadata:
+To update the embedded react application:
 
-1. Activate your CKAN virtual environment, for example::
-
-     . /usr/lib/ckan/default/bin/activate
-
-2. Install the ckanext-react_usmetadata Python package into your virtual environment::
-
-     pip install ckanext-react_usmetadata
-
-3. Add ``react_usmetadata`` to the ``ckan.plugins`` setting in your CKAN
-   config file (by default the config file is located at
-   ``/etc/ckan/default/production.ini``).
-
-4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
-
-     sudo service apache2 reload
-
-
----------------
-Config Settings
----------------
-
-Document any optional config settings here. For example::
-
-    # The minimum number of hours to wait before re-checking a resource
-    # (optional, default: 24).
-    ckanext.react_usmetadata.some_setting = some_default_value
-
+0. Backup and remove this public folder
+1. Go to the react application directory
+2. `yarn build`
+3. `cp -r build/static/* /path/to/ckanext-react_usmetadata/ckanext/react_usmetadata/public/
+4. type `ls public/js`. The file names contain a hash value for example:
+  * runtime~main.7ba465df.js
+  * main.b0613878.chunk.js
+  * 2.758f1cc0.chunk.js
+  (Note that you can ignore the `.js.map` files. Just leave them alone)
+  Copy the updated filenames for future reference.
+4. Do the same for the `public/css` folder, recording the new filenames
+5. Open `/path/to/ckanext-react_usmetadata/templates/snippets/usmetadata_app.html`
+6. Replace the `<script>` and `<link>` tags with the new filenames from the previous steps.
+7. Test and commit the changes.
 
 ------------------------
 Development Installation
