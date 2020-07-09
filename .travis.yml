@@ -1,5 +1,6 @@
 #soon ...
 #sudo: false
+dist: trusty
 language: python
 python:
     - "2.7"
