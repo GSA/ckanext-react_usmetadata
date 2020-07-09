@@ -18,7 +18,9 @@ jobs:
   include:
     - stage: Flake8
       python: 2.7
-      env: FLAKE8=True
+      env: 
+        - FLAKE8=True
+        - CKANVERSION=inventory
       install:
         - pip install flake8==3.5.0
         - pip install pycodestyle==2.3.0
