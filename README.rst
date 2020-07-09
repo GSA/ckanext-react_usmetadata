@@ -8,26 +8,6 @@
 .. image:: https://coveralls.io/repos/datopian/ckanext-react_usmetadata/badge.svg
   :target: https://coveralls.io/r/datopian/ckanext-react_usmetadata
 
-.. image:: https://pypip.in/download/ckanext-react_usmetadata/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-react_usmetadata/
-    :alt: Downloads
-
-.. image:: https://pypip.in/version/ckanext-react_usmetadata/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-react_usmetadata/
-    :alt: Latest Version
-
-.. image:: https://pypip.in/py_versions/ckanext-react_usmetadata/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-react_usmetadata/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/status/ckanext-react_usmetadata/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-react_usmetadata/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-react_usmetadata/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-react_usmetadata/
-    :alt: License
-
 =============
 ckanext-react_usmetadata
 =============
