@@ -5,8 +5,6 @@
 .. image:: https://travis-ci.org/datopian/ckanext-react_usmetadata.svg?branch=master
     :target: https://travis-ci.org/datopian/ckanext-react_usmetadata
 
-.. image:: https://coveralls.io/repos/datopian/ckanext-react_usmetadata/badge.svg
-  :target: https://coveralls.io/r/datopian/ckanext-react_usmetadata
 
 =============
 ckanext-react_usmetadata
