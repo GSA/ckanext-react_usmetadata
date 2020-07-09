@@ -20,7 +20,9 @@ then
 fi
 python setup.py develop
 cp ./ckan/public/base/css/main.css ./ckan/public/base/css/main.debug.css
+echo "Installing requirements.txt"
 pip install -r requirements.txt
+echo "Installing dev-requirements.txt"
 pip install -r dev-requirements.txt
 cd -
 
