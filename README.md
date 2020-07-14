@@ -23,13 +23,15 @@ Run `make test` to run the tests locally inside a docker container
 
 ### React application development
 
-The application lives in the `/app` directory.
+The application lives in the `./app` directory.
+All react source code lives in `./app/src`.
 
-Use app/ directory as the root directory for react development using yarn.
+Use `./app` directory as the root directory for react development using yarn.
 
-Run the application using `yarn start`. It will restart with any saved changes in the /src folder
-
-We encorouge you to use [cosmos](https://reactcosmos.org/) to view application elements. Use `yarn cosmos` to start the cosmos server. The cosmos server will run on `https://localhost:8989`
+* Install project dependencies by running `yarn`.
+* Run `yarn start` to start the application at `localhost:3000`
+The application will restart with any saved changes in the /src folder
+* Run `yarn cosmos` to start the cosmos server at `localhost:8989`
 
 ### Building the application
 
