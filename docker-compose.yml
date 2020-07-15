@@ -1,6 +1,8 @@
 version: "3.2"
 services:
   ckan:
+    build:
+      context: .
     image: openknowledge/ckan-dev:2.8
     env_file:
       - .env
