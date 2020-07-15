@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Run ckanext-react_usmetadata Tests
           command: |
-            docker-compose exec ckan /bin/bash -c "nosetests --ckan --with-pylons=src_extensions/ckanext-react_usmetadata/docker_test.ini src_extensions/ckanext-react_usmetadata/"
+            docker-compose exec ckan /bin/bash -c "nosetests --ckan --with-pylons=src_extensions/react_usmetadata/docker_test.ini src_extensions/react_usmetadata/"
   build_gsa_ckan_inventory:
     working_directory: ~/ckanext-react_usmetadata
     machine:
